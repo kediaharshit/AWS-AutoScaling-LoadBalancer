@@ -1,0 +1,14 @@
+The programs are written in python3 and AWS cloud is used for practicalexperiment purposes. 
+ubuntu 18.04 free tier instances were used for the assignment purpose.
+
+The program is run upon 3 different situations:
+Local host
+Singe instance server
+Auto-Scalable server  (upto 4 instances)
+
+The Virtual machine image contains the server.py program alongwith apache2 http response server, which helps pass health checks.
+
+Client here sends UDP packets to Load Balancer at port 20000, at which the Load balancer is listening.
+The received packets are targeted to healthy instances present at the port no 20001, on which the server program in binded to.
+
+Note:- Due to running for about 20 minutes, the file rate\_5000 file is massive (>100 mb) and hence not attached with the submission.
